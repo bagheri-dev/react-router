@@ -12,10 +12,13 @@ const CommentsPost: React.FC = () => {
   });
   return (
     <>
-      <div className="flex flex-col mt-5">
+      <div className="flex flex-col mt-5 space-y-2">
         {/* <h1 className="text-xl">comments {id}</h1> */}
         {(comments.data?.comments || []).map((el) => (
-          <div className="py-5 space-y-3 border-2 border-gray-900  px-4 rounded-lg" key={el.id}>
+          <div
+            className="py-5 space-y-3 border-2 border-gray-900  px-4 rounded-lg"
+            key={el.id}
+          >
             <p className="text-lg">username: {el.user.username}</p>
             <p className="font-bold">{el.body}</p>
             <p className="flex items-center gap-x-3">

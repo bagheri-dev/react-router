@@ -5,7 +5,7 @@ const NotFoundPage: React.FC = () => {
     <>
       <div className="mt-5 mb-5">
         <div className=" text-[#566FA7] w-full h-full container mx-auto">
-          <div className="flex items-center gap-x-48">
+          <div className="flex flex-col lg:flex-row items-center gap-x-48">
             <div>
               <img
                 className="w-[520px]"
@@ -14,8 +14,8 @@ const NotFoundPage: React.FC = () => {
               />
             </div>
             <div className="space-y-5">
-              <p className="text-8xl font-bold">OOPS!</p>
-              <p className="text-5xl">
+              <p className=" text-xl lg:text-8xl font-bold">OOPS!</p>
+              <p className="text-lg lg:text-5xl">
                 Looks like big foot <br />
                 has broken the link
               </p>
